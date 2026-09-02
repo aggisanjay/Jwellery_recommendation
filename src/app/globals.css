@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-atelier-950 text-gold-100 antialiased selection:bg-gold-500/30 selection:text-gold-200 min-h-screen;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom Luxury Gradients & Accents */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FBF4E4 0%, #D8B26E 50%, #A27B3B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.emerald-gradient-badge {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(6, 78, 59, 0.4) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.gold-border-glow {
+  box-shadow: 0 0 25px -5px rgba(214, 183, 126, 0.15);
+}
+
+.gold-glow-hover:hover {
+  box-shadow: 0 0 30px -4px rgba(214, 183, 126, 0.25);
+  border-color: rgba(214, 183, 126, 0.5);
+}
+
+/* Custom scrollbar for horizontal ribbon */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(23, 20, 32, 0.6);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(199, 155, 84, 0.3);
+  border-radius: 9999px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(199, 155, 84, 0.6);
+}
